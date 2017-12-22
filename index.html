@@ -242,7 +242,7 @@
                 // Anchor link of each offence in the AGC's full document listing of Cap. 224 happens to be hardcoded
                 // Regex below removes brackets and their contents in the section number since they are not supported in the listing
                 // so e.g. 304A(b) becomes simply 304A
-                $("#result #agclink a").attr("href", "https://sso.agc.gov.sg/Act/PC1871#pr" + suggestion.section.replace(/ *\([^)]*\) */g, "") + "-");
+                $("#result #agclink a").attr("href", "https://sso.agc.gov.sg/Act/PC1871?ProvIds=pr" + suggestion.section.replace(/ *\([^)]*\) */g, "") + "-.");
                 
                 $("#result #agclink a").removeClass("hidden");
             }
