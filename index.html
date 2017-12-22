@@ -242,7 +242,7 @@
                 // Anchor link of each offence in the AGC's full document listing of Cap. 224 happens to be hardcoded
                 // Regex below removes brackets and their contents in the section number since they are not supported in the listing
                 // so e.g. 304A(b) becomes simply 304A
-                $("#result #agclink a").attr("href", "http://statutes.agc.gov.sg/aol/search/display/view.w3p;query=Content%3A%2222%22%20(CapAct%3A224%20%7C%20ParentCapAct%3A224)%20Status%3Ainforce;rec=0;resUrl=http%3A%2F%2Fstatutes.agc.gov.sg%2Faol%2Fsearch%2Fsummary%2Fresults.w3p%3Bquery%3DContent%253A%252222%2522%2520(CapAct%253A224%2520%7C%2520ParentCapAct%253A224)%2520Status%253Ainforce;whole=yes#pr" + suggestion.section.replace(/ *\([^)]*\) */g, "") + "-he-.");
+                $("#result #agclink a").attr("href", "https://sso.agc.gov.sg/Act/PC1871#pr" + suggestion.section.replace(/ *\([^)]*\) */g, "") + "-");
                 
                 $("#result #agclink a").removeClass("hidden");
             }
